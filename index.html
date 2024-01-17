@@ -192,6 +192,7 @@
         <script src="./js/product.js"></script>
         <!-- Script For Grid Product -->
         <script>
+
             window.addEventListener('load', function () {
                 
                 const productContainer = document.querySelector('.product-container'); // Assuming you have a container with this class
@@ -351,7 +352,10 @@
         function closePopup() {
           document.getElementById("popup-container").classList.add("hidden");
         }
-      
+
+        document.addEventListener('touchstart', handleTouchStart, { passive: true });
+
+
         // Attach a click event to the "Nous contacter" button
         document.addEventListener("DOMContentLoaded", function () {
           const contactButton = document.getElementById("contact-button");
@@ -365,6 +369,7 @@
           if (closePopupButton) {
             closePopupButton.addEventListener("click", closePopup);
           }
+
 
 
 

@@ -23,7 +23,6 @@ const products = [
         materials: 'ART2491',
         price: 'lot de 8 chaises 2250€ TTC VENDU'
     },
-    // Table basse VERSAILLES ART2473 hêtre patiné métal finition laiton et rotin dimensions :120x120x41,5cm / 720€ TTC
     {
         image: './assets/product/4.jpg',
         title: 'Table Basse',
@@ -32,7 +31,6 @@ const products = [
         materials: 'ART2473 hêtre patiné métal finition laiton et rotin',
         price: '720€ TTC'
     },
-    // abourets BETON ART2585 résine finition béton ciré dimensions : hauteur 44 diametre 35 / lot de 3 pièces 300€TTC
     {
         image: './assets/product/5.jpg',
         title: 'Abourets',
@@ -41,7 +39,6 @@ const products = [
         materials: 'ART2585 résine finition béton ciré',
         price: 'lot de 3 pièces 300€ TTC'
     },
-    // Canapé ANVERS ART2731 housse en coton et jutte (housse neuve) dimensions :220X98X70cm 2150€TTC
     {
         image: './assets/product/6.png',
         title: 'Canapé ',
@@ -50,7 +47,6 @@ const products = [
         materials: 'ART2731 housse en coton et jutte (housse neuve)',
         price: '2150€ TTC'
     },
-    // Luminaire BAMBOU set de trois tailles ART 3415/3416/3417 diamètre 60/80/120 440€TTC
     {
         image: './assets/product/7.jpg',
         title: 'Luminaire',
@@ -59,7 +55,6 @@ const products = [
         materials: 'ART 3415/3416/3417',
         price: '440€ TTC'
     },
-    // Table basse LIT Ethiopien pièce unique antiquité ART3262 dimensions 100x180 environ hauteur 50 2400€TTC
     {
         image: './assets/product/8.jpg',
         title: 'Table',
@@ -68,7 +63,6 @@ const products = [
         materials: 'ART3262',
         price: '2400€TTC    '
     },
-    // Luminaire Papouasie Small ART2998 diametre 60 / lot de 3 pieces 360€ TTC
     {
         image: './assets/product/9.jpg',
         title: 'Luminaire',
@@ -77,7 +71,6 @@ const products = [
         materials: 'ART2998',
         price: 'lot de 3 pieces 360€ TTC'
     },
-    //  Planche à découper OCEAN ART2303 Teck dimensions 50x20 lot de 10 planches 450€ TTC
     {
         image: './assets/product/10.png',
         title: 'Planche à découper OCEAN',
@@ -86,7 +79,6 @@ const products = [
         materials: 'ART2303',
         price: 'lot de 10 planches 450€ TTC'
     },
-    // Huilier Drop verre soufflé sur pièce de teck (pièce unique) ART2764 diametre 11 à 13cm 55€TTC
     {
         image: './assets/product/11.jpg',
         title: 'Huilier Drop ',
@@ -95,7 +87,6 @@ const products = [
         materials: 'ART2764',
         price: '55€ TTC'
     },
-    // Set de 3 planches MAISON ART3210 /3211/3212 teck dimensions 25/40/54x15cm / 60€TTC
     {
         image: './assets/product/12.png',
         title: 'Set de 3 planches MAISON' ,
@@ -104,5 +95,4 @@ const products = [
         materials: 'ART3210 /3211/3212',
         price: '60€ TTC'
     },
-    // Add more products here as needed
 ];
