@@ -1,6 +1,6 @@
 const products = [
     {
-        image: './assets/product/1.png',
+        image: './assets/product/1.webp',
         title: 'Chaise TOKYO ',
         sub: 'Teck',
         dimensions: '76,5 x 54 x 53 cm',
@@ -8,7 +8,7 @@ const products = [
         price: 'lot de 6 chaises 1320€ TTC'
     },
     {
-        image: './assets/product/2.png',
+        image: './assets/product/2.webp',
         title: 'tabouret de bar BRUT',
         sub: 'Teck',
         dimensions: '74,5 x 45 x 47 cm',
@@ -16,7 +16,7 @@ const products = [
         price: 'lot de 3 tabourets 775€ TTC '
     },
     {
-        image: './assets/product/3.png',
+        image: './assets/product/3.webp',
         title: 'Chaise HIROSHIMA',
         sub: 'Teck Carbone',
         dimensions: '78,5 x 57 x 51 cm',
@@ -24,7 +24,7 @@ const products = [
         price: 'lot de 8 chaises 2250€ TTC VENDU'
     },
     {
-        image: './assets/product/4.jpg',
+        image: './assets/product/4.webp',
         title: 'Table Basse',
         sub: 'VERSAILLES',
         dimensions: '120x120x41,5cm',
@@ -32,7 +32,7 @@ const products = [
         price: '720€ TTC'
     },
     {
-        image: './assets/product/5.jpg',
+        image: './assets/product/5.webp',
         title: 'Abourets',
         sub: 'BETON',
         dimensions: 'hauteur 44 diametre 35',
@@ -40,7 +40,7 @@ const products = [
         price: 'lot de 3 pièces 300€ TTC'
     },
     {
-        image: './assets/product/6.png',
+        image: './assets/product/6.webp',
         title: 'Canapé ',
         sub: 'ANVERS',
         dimensions: '220X98X70cm',
@@ -48,7 +48,7 @@ const products = [
         price: '2150€ TTC'
     },
     {
-        image: './assets/product/7.jpg',
+        image: './assets/product/7.webp',
         title: 'Luminaire',
         sub: 'BAMBOU set de trois tailles',
         dimensions: 'diamètre 60/80/120',
@@ -56,7 +56,7 @@ const products = [
         price: '440€ TTC'
     },
     {
-        image: './assets/product/8.jpg',
+        image: './assets/product/8.webp',
         title: 'Table',
         sub: 'basse LIT Ethiopien pièce unique antiquité',
         dimensions: '100x180 environ hauteur 50',
@@ -64,7 +64,7 @@ const products = [
         price: '2400€TTC    '
     },
     {
-        image: './assets/product/9.jpg',
+        image: './assets/product/9.webp',
         title: 'Luminaire',
         sub: 'Papouasie Small',
         dimensions: ' 60 ',
@@ -72,7 +72,7 @@ const products = [
         price: 'lot de 3 pieces 360€ TTC'
     },
     {
-        image: './assets/product/10.png',
+        image: './assets/product/10.webp',
         title: 'Planche à découper OCEAN',
         sub: 'Teck',
         dimensions: '50x20 ',
@@ -80,7 +80,7 @@ const products = [
         price: 'lot de 10 planches 450€ TTC'
     },
     {
-        image: './assets/product/11.jpg',
+        image: './assets/product/11.webp',
         title: 'Huilier Drop ',
         sub: 'verre soufflé sur pièce de teck (pièce unique)',
         dimensions: 'diametre 11 à 13cm',
@@ -88,7 +88,7 @@ const products = [
         price: '55€ TTC'
     },
     {
-        image: './assets/product/12.png',
+        image: './assets/product/12.webp',
         title: 'Set de 3 planches MAISON' ,
         sub: 'Teck',
         dimensions: '25/40/54x15cm',
