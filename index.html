@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>joesayegh-vintage</title>
+    <link rel="icon" type="image/x-icon" href="./assets/JS Vintage Logo/Joe-Sayegh-Vintage-Favicon fond blanc.webp">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        @font-face { font-family: bebas-nue-bold; src: url('./assets/fonts/bebas-font.ttf'); } 
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .f-bebas {
+            font-family: bebas-nue-bold ;
+        }
+        .f-caveat {
+            font-family: 'Caveat', cursive;
+        }
+        .f-bebas-bold {
+            font-family: bebas-nue-bold ;
+        }
+
+        .spread-text{
+            text-shadow: 0 0 20px #000;
+        }
+
+        .img-wrapper {
+            display: inline-block;
+            overflow: hidden;
+        }
+        .zoomed {
+            transform:scale(1.5);
+            -ms-transform:scale(1.5); /* IE 9 */
+            -moz-transform:scale(1.5); /* Firefox */
+            -webkit-transform:scale(1.5); /* Safari and Chrome */
+            -o-transform:scale(1.5); /*  /* adjust the inset values for the zoomed state */
+        }
+        /* .clamp-text-on-image {
+            font-size : clamp(12px, 8vw, 9.2vw);
+        } */
+        
+        .clamp-text-second {
+            font-size: clamp(20px, 8vw, 9.2vw);
+        }
+
+        .clamp-text-third {
+            font-size : clamp(10px, 8vw, 9.2vw);
+        }
+
+        .divider {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .bg-custom-gray{
+            background-color: #D7D7D7;
+        }
+
+    </style>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+       tailwind.config = {
+            theme: {
+                screens:{
+                    'xs': '302px',
+                    'sm': '425px', 
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        caveat : ['Caveat', 'cursive'],
+                        bebas : ['Bebas Neue', 'cursive'],
+                    },
+                }
+            }
+        };
+    </script>
+  </head>
+
+  <body class="w-full ">
+
+    <header class="bg-black w-full py-3 " >
+      <p class="xs:text-[15px] md:text-[20px] lg:text-[30px] f-bebas-bold text-white tracking-widest text-center">Ouverture de l'e-shop - Printemps 2024!</p>
+    </header>
+
+
+    <!-- Section 1 -->
+    <section class="flex flex-col py-4  ">
+        <div class="flex flex-col items-center justify-center gap-5">
+            <img class="max-w-[30%] md:max-w-[10%] lg:max-w-[10%] " src="./assets/images/log-jsv.webp" alt="">
+            <div class="flex flex-row gap-10 md:gap-24 lg:gap-40 ">
+                <a href="#propos-section" class="f-bebas text-lg md:text-2xl lg:text-4xl hover:underline hover:underline-offset-1 cursor-pointer">A PROPOS</a>
+                <a href="#commander-section" class="f-bebas text-lg md:text-2xl lg:text-4xl hover:underline hover:underline-offset-1 cursor-pointer">COMMANDER</p>
+                <a href="#contact-section" class="f-bebas text-lg md:text-2xl lg:text-4xl hover:underline hover:underline-offset-1 cursor-pointer">CONTACT</a>
+            </div>
+            <div class="flex flex-row gap-5 xs:gap-2 items-center justify-center px-2 lg:px-10  relative ">
+                <div class="img-wrapper bg-red-500">
+                    <img class="zoomed " src="./assets/images/JS-Vintage-photo-lanterne.webp" alt="">
+                </div>
+                <div class="img-wrapper bg-red-500">
+                    <img class=" " src="./assets/images/JS-Vintage-photo-chaises.webp" alt="">
+                </div>
+                <div class="img-wrapper bg-red-500">
+                    <img class="" src="./assets/images/JS-Vintage-JoeSayegh-atelier.jpg" alt="">
+                </div>
+                <div class="absolute  text-center pt-20 xs:pt-12 md:pt-[100px] lg:pt-[225px]">
+                    <p class="xs:text-[23px] sm:text-[30px] md:text-[60px] lg:text-[70px] xl:text-[120px] xl:leading-[110px] xs:leading-[30px] md:leading-[60px] lg:leading-[90px] f-caveat spread-text text-white  ">
+                        La Marque Joe Sayegh Paris <br> disponible en seconde main !
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="px-10 xs:px-5 w-full justify-center items-center py-5  lg:py-10 " id="propos-section">
+            <div class="flex flex-row justify-between items-center pb-2 ">
+                <p class="f-caveat xs:text-[40px] md:text-[60px] lg:text-[80px] text-start px-4 items-center w-auto font-bold">A propos</p>
+                <hr class="divide-y bg-black lg:h-1 h-[3px] items-center flex-grow xs:mt-6 md:mt-12 lg:mt-12">
+            </div>
+            <div class="flex flex-col gap-2 lg:gap-20">
+                <p class="text-justify   px-2 xs:text-lg sm:text-xl md:text-4xl xl:text-5xl f-bebas text-gray-500 ">
+                    Récupérer, travailler et faire vivre le bois à travers ses objets constituent l’ADN même du
+                    créateur Joe Sayegh.
+                </p>
+                <p class="text-justify px-2 xs:text-lg sm:text-xl md:text-4xl xl:text-5xl f-bebas text-gray-500 ">
+                    Dans un monde où l’écologie prend une place de plus en plus importante, préserver la
+                    nature et ses ressources devient essentiel. En créant JS Vintage, Joe Sayegh propose
+                    d’adopter un comportement durable et responsable, et vous invite à donner une seconde
+                    vie à ses collections.
+                </p>
+                <p class="text-justify  px-2 xs:text-lg sm:text-xl md:text-4xl xl:text-5xl f-bebas text-gray-500 ">
+                    Joe Sayegh Vintage c’est également de l’art de la table et des pièces neuves provenant des
+                    anciennes collections, en séries limitées exclusives.
+                </p>
+                <p class="text-justify lg:leading-[200px]  font-bold px-2 xs:text-lg sm:text-xl md:text-4xl xl:text-5xl f-bebas font-bold "  >
+                    Chaque produit de seconde main passe dans nos ateliers pour y être méticuleusement contrôlé, et si besoin reconditionné, par nos équipes. Les finitions, teintes et patines sont reprises pour vous proposer des pièces répondant aux standards qualité Joe Sayegh Paris.
+                </p>
+            </div>
+        </div>
+        <section class="flex flex-row  items-center justify-center bg-custom-gray gap-5 md:gap-10 lg:gap-56 py-5 px-5 lg:py-10 lg:px-20">
+            <div class="flex flex-col  justify-center items-center gap-5  ">
+                <img src="./assets/images/search-icon.svg" alt="" class="w-10 md:w-20 lg:w-20">
+                <p class="text-center f-bebas text-[10px] xs:text-[15px] md:text-[20px] lg:text-[30px]">
+                    Controle qualito  de <br> toutes  les pieces  proposees
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5">
+                <img src="./assets/images/deployed.svg" alt="" class="w-10 md:w-20 lg:w-20">
+                <p class="text-center f-bebas text-[10px] xs:text-[15px] md:text-[20px] lg:text-[30px]">
+                    Livraison assuree par <br> collissimo ou transporteur
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5">
+                <img src="./assets/images/euro.png" alt="" class="w-10 md:w-20 lg:w-20">
+                <p class="text-center f-bebas  text-[10px] xs:text-[15px] md:text-[20px] lg:text-[30px]">
+                    Jusqu`a -50% par rapport <br> au prix neuf
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="commander-section">
+        <div class="flex flex-col justify-center items-center lg:px-30">
+            <p class="f-caveat text-[50px] md:text[60px] lg:text-[90px] text-center font-bold ">Déjà disponible !</p>
+            <p class="f-bebas text-[20px] md:text-[30px] lg:text-[40px] text-center w-[85%] lg:w-[76%]">En attendant I’ouverture de l’e-shop, vous pouvez déjà  passer <br> commande en contactant notre équipe</p>
+        </div>
+
+        <div class="flex justify-center items-center pt-10 pb-2">
+            <button class="bg-gray-300 w-max px-20 xs:px-[50px] rounded-lg f-caveat text-[20px] md:text-[40px] lg:text-[50px]">
+                Je passe commande
+            </button>
+        </div>
+
+        <!-- List Product -->
+        <script src="./js/product.js"></script>
+        <!-- Script For Grid Product -->
+        <script>
+            window.addEventListener('load', function () {
+                
+                const productContainer = document.querySelector('.product-container'); // Assuming you have a container with this class
+
+                products.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('w-full', 'flex', 'flex-col');
+
+                    // Image
+                    const img = document.createElement('img');
+                    img.src = product.image;
+                    img.alt = product.title;
+                    img.classList.add('w-full', 'h-full', 'object-cover');
+                    productDiv.appendChild(img);
+
+                    // Title
+                    const title = document.createElement('p');
+                    title.textContent = product.title;
+                    title.classList.add('f-caveat','text-[20px]','xs:text-[16px]','md:text-[40px]', 'lg:text-[40px]');
+                    productDiv.appendChild(title);
+
+                    // Details
+                    const details = document.createElement('div');
+                    details.classList.add('flex', 'flex-col', 'pl-2', 'xs:pl-0');
+
+                    const detailItems = [
+                        ['Dimensions :', product.dimensions],
+                        ['Nombre d`exemplaires :', product.quantity],
+                        ['Materiaux :', product.materials],
+                        ['Prix :', product.price]
+                    ];
+
+                    detailItems.forEach(([label, value]) => {
+                        const detailItem = document.createElement('p');
+                        detailItem.textContent = `${label} ${value}`;
+                        detailItem.classList.add('f-bebas','text-[12px]','md:text-[20px]', 'lg:text-[30px]', 'text-gray-400');
+                        details.appendChild(detailItem);
+                    });
+
+                    productDiv.appendChild(details);
+
+                    productContainer.appendChild(productDiv);
+                });
+            });
+        </script>
+
+        <!-- Grid Product -->
+        <div class="flex justify-center items-center w-full py-10">
+            <div class="grid grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-10 w-full px-5 md:px-5 lg:px-20 product-container">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-red-500">
+        <div class="flex flex-col md:flex-row lg:flex-row justify-center items-center h-full bg-custom-gray">
+            <div class=" w-full  flex flex-col items-center justify-center gap-10 py-5">
+                <div class="flex flex-col">
+                    <p class="f-bebas text-[30px]  xs:text-center lg:text-[60px]" style="font-weight: 900;  line-height: 0.1;"> Ouverture de l`e-shop</p>
+                    <p class="text-white text-[20px] xs:text-[35px] xs:text-center lg:text-[80px] f-caveat " style="font-weight: 900;"> Printemps 2024</p>
+                </div>
+                <div class="flex flex-col">
+                    <input class="bg-white shadow appearance-none  rounded w-full py-2 px-3 lg:px-[120px] text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" >
+                    <div class="flex flex-col items-center justify-center">
+                        <p class="f-bebas pt-5 lg:text-[25px]" >Je renseigne mon email pour etre preveneu.e de</p>
+                        <p class="f-bebas lg:text-[25px]"  >l`ouverture de la boutique en ligne !</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-full h-full flex flex-col py-2 md:py-[40px] lg:py-[45px]  gap-10 px-10">
+                <div class="flex flex-col items-center md:items-start lg:items-start justify-center">
+                    <p class="f-caveat text-[40px] xs:text-[30px] lg:text-[50px] ">Passez commande des <br> maintenant !</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start lg:items-start justify-center">
+                    <p class="f-bebas text-medium lg:text-[25px]">Completez le formulaire de commande </p>
+                    <p class="f-bebas lg:text-[25px]">et retournez-le par mail a :</p>
+                    <p class="f-bebas lg:text-[25px]">contact@joesayegh-vintage.com</p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    
+
+    <section class="bg-black" id="contact-section">
+        <div class="flex flex-col md:flex-row lg:flex-row p-10 gap-5 w-full ">
+            <img src="./assets/images/logo-white.png" alt="" class="w-[30%] h-[30%] md:w-[30%] md:h-[30%] lg:w-[20%] lg:w-[30%] mx-auto fill-red-500">
+            <div class="flex flex-col w-full">
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-col ">
+                        <p class="f-caveat text-white text-[30px] lg:text-[50px]">Contact</p>
+                        <p class="f-bebas text-white lg:text-[20px]">15 rue de l`Avre</p>
+                        <p class="f-bebas text-white lg:text-[20px]">28270 BEROU LA MULOTIERE</p>
+                    </div>
+                    <div class="flex flex-row justify-end gap-2 ">
+                        <img src="./assets/images/in.svg" alt="" class="w-[15%]">
+                        <img src="./assets/images/ig.svg" alt="" class="w-[15%]">
+                        <img src="./assets/images/fb.svg" alt="" class="w-[15%]">
+                    </div>
+                </div>
+
+                <div class="flex flex-col pt-10">
+                    <p class="f-bebas text-white  lg:text-[20px]">contact@joesayegh-vintage.com</p>
+                    <p class="f-bebas text-white lg:text-[20px]">01 01 01 01 01</p>
+                </div>
+
+                <p class="f-bebas text-white lg:text-[25px] pt-10">Mentions Legales | CGV | Politiques de confidentialite | Politique de Cookies</p>
+
+            </div>
+        </div>
+
+    </section>
+
+    
+  </body>
+
+</html>
+
+
+
