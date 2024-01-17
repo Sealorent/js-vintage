@@ -304,27 +304,27 @@
 
     </section>
 
-    <div id="popup-container" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-        <div class="bg-white m-10 p-10 lg:p-12 rounded shadow-md relative lg:w-5/12">
+    <div id="popup-container" class=" fixed top-0  left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center ">
+        <div class="bg-white xs:m-3 m-10 p-10 lg:p-12 rounded shadow-md relative h-full xs:w-12/12 lg:w-5/12 overflow-y-auto">
            
             <div class="absolute right-3 top-3 w-[20px] h-[20px] " id="close-popup-button">
                 <img src="./assets/images/close.svg" alt="" srcset="" >
             </div>
             <h2 class="lg:text-lg text-gray-500 mb-4 text-justify">Vous souhaitez commander ? Remplissez le formulaire pour que notre équipe  puisse vous recontacter !</h2>
             <!-- Add your contact form or any other content here -->
-            <form action="your_contact_form_action" method="post" class="flex flex-col gap-2"  id="captcha-form">
-                <div class="flex flex-row gap-2">
+            <form action="your_contact_form_action" method="post" class="flex flex-col gap-2 relative"  id="captcha-form">
+                <div class="flex xs:flex-col flex-row gap-2">
                     <input type="text" placeholder="Prénom" class="w-full border border-2 rounded-lg p-2 bg-gray-100">
                     <input type="text" placeholder="NOM" class="w-full border border-2 rounded-lg p-2 bg-gray-100">
                 </div>
                 <div class="flex flex-row gap-2">
                     <input type="text" placeholder="Addresse" class="w-full border rounded-lg border-2 p-2 bg-gray-100">
                 </div>
-                <div class="flex flex-row gap-2">
+                <div class="flex xs:flex-col flex-row gap-2">
                     <input type="text" placeholder="CP" class="w-full border border-2 rounded-lg p-2 bg-gray-100">
                     <input type="text" placeholder="Ville" class="w-full border border-2 rounded-lg p-2 bg-gray-100">
                 </div>
-                <div class="flex flex-row gap-2">
+                <div class="flex xs:flex-col flex-row gap-2">
                     <input type="text" placeholder="Email" class="w-full border border-2 rounded-lg p-2 bg-gray-100">
                     <input type="text" placeholder="Numéro de Mobile" class="w-full border border-2 rounded-lg p-2 bg-gray-100">
                 </div>
@@ -333,10 +333,10 @@
                 </div>
                 <div class="flex flex-row gap-2 items-start justify-start">
                     <input type="checkbox" class="mt-1 p-1 w-5 h-5">
-                    <p class="text-gray-400 sm:text-[12px] text-justify ">Je suis informé.e que les informations renseignées ne serviront qu’à traiter ma demande  pour passer commande, et que mes données ne seront transmises à aucun tiers.</p>                    
+                    <p class="text-gray-400 xs:text-[11px] sm:text-[12px] text-justify ">Je suis informé.e que les informations renseignées ne serviront qu’à traiter ma demande  pour passer commande, et que mes données ne seront transmises à aucun tiers.</p>                    
                 </div>
-                <div class="flex flex-row items-center justify-end mt-5">
-                    <div class="g-recaptcha h-20" data-sitekey="6LeD3VMpAAAAAObVpSJgzzJmUdoiwk6KYhX1GyJd" ></div>
+                <div class="flex xs:flex-col flex-row items-center justify-end mt-5">
+                    <div class="g-recaptcha  mx-2" data-sitekey="6LeD3VMpAAAAAObVpSJgzzJmUdoiwk6KYhX1GyJd" ></div>
                     <button type="submit" class="bg-blue-500 text-white px-4 py-2  rounded">Submit</button>
                 </div>
             </form>
@@ -356,7 +356,7 @@
         function handleTouchStart(event) {
         // Votre logique pour gérer l'événement touchstart ici
         }
-        
+
         document.addEventListener('touchstart', handleTouchStart, { passive: true });
 
 
